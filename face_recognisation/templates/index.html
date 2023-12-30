@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+    h3 {
+        color: blue; /* Change the color to your preference */
+        text-align: center;
+    }
+    .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+</style>
+  <body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8  offset-lg-2">
+                <h3 class="mt-5">Live Streaming</h3>
+               <div class="image-container">
+        <img src="{{url_for('video_feed')}}" />
+    </div>
+            </div>
+        </div>
+    </div>
+    </body>
+
+
+</html>
